@@ -88,7 +88,20 @@ header {
     width: 150px;
     margin-left: 5px;
     width: 100px;
-    height: 100px; }
+    height: 100px;
+    transition: all 2s;
+    animation-name: paisaje-logo;
+    animation-iteration-count: 5;
+    animation-timing-function: ease-in;
+    animation-duration: 5s; }
+
+@keyframes paisaje-logo {
+  0% {
+    transform: translateX(-50); }
+  50% {
+    transform: translateY(50); }
+  100% {
+    transform: rotate(360deg); } }
 
 nav {
   padding-top: 5rem; }

@@ -62,7 +62,7 @@ main{
                         tr{
                             th{
                                 font-size:$fuente-normal;
-                                color: $color-secundario;
+                                color: $color-6;
                             }
                         }
                     }
@@ -78,28 +78,12 @@ main{
 
 main{
     div{
-        p card-text mb-5{
-           font-size:$fuente-chica;
+        p card-text{
+           font-size:10px;
            color:$color-6;
 
         }
     }
 }
-
-main{
-    div video{
-        div{
-            link{ position: fixed;
-                top:50%;
-                left: 50%;
-                transform: translate (-50%, -50%);
-
-            }
-        }
-    }
-}
-
-
-
 
      

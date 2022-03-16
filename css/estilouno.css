@@ -33,7 +33,21 @@ main {
     margin-top: 50px;
     font-size: 30px;
     padding: 30px;
-    color: red; }
+    color: black; }
+
+main div div div table thead tr th {
+  font-size: 1em;
+  color: #6B6; }
+
+main div p card-text mb-5 {
+  font-size: 15px;
+  color: black; }
+
+main div video div link {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate -50%, -50%; }
 
 footer {
   background-image: linear-gradient(blue, green);

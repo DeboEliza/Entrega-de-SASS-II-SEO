@@ -24,11 +24,11 @@ main{ padding-top: 10rem;
                     }
                    div{
                        p{
+                         font-size:  $fuente-chica ;
                         text-align: center;
                         margin-top: 50px;
-                        font-size: 30px;
                         padding: 30px;
-                        $fuente-normal: 1em;
+                        
                       }
                     }
                 }
@@ -43,13 +43,8 @@ main{ padding-top: 10rem;
 
             }
         }
-     p{text-align: center;
-        margin-top: 50px;
-        font-size: 30px;
-        padding: 30px;
-        $fuente-normal: 1em;
-        color: $color-6;
-     }
+     
+    
 }
 
 
@@ -76,15 +71,7 @@ main{
     }
 }
 
-main{
-    div{
-        p card-text{
-           font-size:10px;
-           color:$color-6;
-
-        }
-    }
-}
+            
 
 main{
     .imagenCasaGift{

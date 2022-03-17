@@ -16,9 +16,9 @@ main {
     width: 300px;
     border: 10px solid black; }
   main div article div p {
+    font-size: 18px;
     text-align: center;
     margin-top: 50px;
-    font-size: 30px;
     padding: 30px; }
   main a img {
     width: 300px;
@@ -28,19 +28,9 @@ main {
     height: 200px;
     transition: all 2s;
     margin-left: 50px; }
-  main p {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 30px;
-    padding: 30px;
-    color: black; }
 
 main div div div table thead tr th {
   font-size: 1em;
-  color: black; }
-
-main div p card-text {
-  font-size: 10px;
   color: black; }
 
 main .carusel-de-fotos .carusel-de-fotos1 {

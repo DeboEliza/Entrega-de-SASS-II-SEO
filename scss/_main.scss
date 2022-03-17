@@ -86,4 +86,36 @@ main{
     }
 }
 
+main{
+    .imagenCasaGift{
+                    img{ 
+                        @include posiciones1;
+
+                    }
+       
+    }
+}
+
+main{
+    div{
+        .preguntas{
+            .otrasPreguntas{
+                .primer-pregunta{
+                               @include posiciones;
+                }
+                
+            }
+            
+        }
+    }
+}
+
+main{
+    .carusel-de-fotos{
+        .carusel-de-fotos1{
+                          @include posiciones1;
+
+        }
+    }
+}
      

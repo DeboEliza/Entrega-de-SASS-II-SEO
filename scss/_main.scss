@@ -89,7 +89,8 @@ main{
 main{
     .imagenCasaGift{
                     img{ 
-                        @include posiciones1;
+                        @extend .position-relative;
+                    
 
                     }
        
@@ -100,8 +101,9 @@ main{
     div{
         .preguntas{
             .otrasPreguntas{
-                .primer-pregunta{
-                               @include posiciones;
+                .primer-pregunta{ 
+                    @extend .position-relativeR;
+                              
                 }
                 
             }
@@ -113,9 +115,20 @@ main{
 main{
     .carusel-de-fotos{
         .carusel-de-fotos1{
-                          @include posiciones1;
+            @extend .position-relativeR;
+            margin-right: auto;
+            padding-left: 10%;
 
         }
     }
 }
-     
+  
+main{
+    .video{
+        .videoPosicion{
+            @extend .position-relativeR;
+            margin-top: 30px;
+        }
+    }
+}
+

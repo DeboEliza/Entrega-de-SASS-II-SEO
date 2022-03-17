@@ -1,12 +1,16 @@
-@mixin posiciones { position: relative;
-    margin-left: 400px;
-    
+
+ .position-relative{
+                     position: relative;
+                    padding-bottom: 10px;
+                    margin-bottom: 150px;
+                    margin-left: 400px;
+                    border: 10px solid black;
 }
 
-@mixin posiciones1{
-                     position: relative;
-                     padding-bottom: 10px;
-                     margin-bottom: 150px;
-                     margin-left: 400px;
-                     border: 10px solid black;
+
+.position-relativeR{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 150px;
+    margin-left: 400px;
 }

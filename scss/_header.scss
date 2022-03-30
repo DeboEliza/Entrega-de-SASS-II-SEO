@@ -1,4 +1,6 @@
 header{
+    .container-fluid{
+        .nav-menu{
      position:fixed;
      z-index: 5;
       left:0%;
@@ -10,11 +12,12 @@ header{
      display: grid;
      grid-template-rows: 50px;
      grid-column: 100px 10px 10px 10px 10px;
-     background:$backgroundprimario;
-      
+     background:$backgroundprimario;}
+    }
+    
   div{ 
         a{ 
-            img{
+            .logotipo{
                 margin-top: 0%;
                 width: 150px;
                 margin-left: 5px;
@@ -40,6 +43,22 @@ header{
         }
     } 
 
-     
+    
         
 }
+
+
+@media screen and (max-width: 320){
+    nav {
+        display: flex;
+        flex-direction: row;
+        height: 30px;
+        bottom: 82px;
+        left: 10px;
+        padding-left: 5px;
+        margin: 10%;
+    }
+    
+}
+
+

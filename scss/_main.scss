@@ -119,3 +119,17 @@ main{
     }
 }
 
+@media screen and (max-width: 320){
+  main{
+      div{
+          article{
+                .logo-grande{
+                     display: block;
+                     margin:auto;
+                     width: 121px;
+                     border: 5px solid black;
+                    }        
+            } 
+        }
+    }  
+}

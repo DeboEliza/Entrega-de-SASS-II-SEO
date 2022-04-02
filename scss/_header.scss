@@ -1,4 +1,17 @@
 header{
+    position:fixed;
+     z-index: 5;
+      left:0%;
+     top: 0%;
+     right: 0%;
+     height: 100px;
+     margin: 100px;
+     margin-top: 0%;
+     display: grid;
+     grid-template-rows: 50px;
+     grid-column: 100px 10px 10px 10px 10px;
+     background:$backgroundprimario;
+    
     .container-fluid{
         .nav-menu{
      position:fixed;
@@ -19,7 +32,6 @@ header{
         a{ 
             .logotipo{
                 margin-top: 0%;
-                width: 150px;
                 margin-left: 5px;
                 width: 100px; height: 100px;
                 transition: all 2s;
@@ -47,6 +59,17 @@ header{
         
 }
 
+header{
+    .container-fluid{
+        .div-row{
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -8px;
+            margin-left: -575px;
+        }
+    }
+}
+
 
 @media screen and (max-width: 320){
     nav {
@@ -62,3 +85,17 @@ header{
 }
 
 
+
+
+.menu{
+    font-size: 17px;
+    color: black;
+    margin-left: 10px;
+}
+@media screen and (max-width: 320){
+                        .header {
+                            margin: 15px;
+                            margin-top: 0%;
+                            height: 50px;
+                          }                                          
+ }

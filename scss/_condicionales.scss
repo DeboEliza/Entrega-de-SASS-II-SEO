@@ -12,39 +12,48 @@ header{
 			ul {display: flex;
         flex-direction: row;
         height: 30px;
-        bottom: 82px;
-        left: 10px;
+        bottom: 143px;
+        left: -184px;
         padding-left: 5px;
         margin: 10%;}
 
-        .logotipo {
+     div{
+         a{
+            .logotipo {
+                margin-bottom: 13cm;
+                width: 50px;
+                height: 50px;
+            }
+         }
+     } a  .logotipo {
             margin-bottom: 13cm;
             width: 50px;
             height: 50px;
-            margin-top: 0%;
-            margin-left: 5px;
-            transition: all 2s;}
+        }
+        
         
     
-    li{
-      list-style-type:none;
-      color: black; 
-      font-size: 10px;
-      padding: -5px;
-      font-size: 17px;
-      width: 45px;
-      height: 51px;
-      transition: all 2s;}
+    .container-fluid{
+        nav{
+            ul{
+                .menu{
+                         list-style-type:none;
+                         color: black; 
+                         font-size: 10px;
+                         margin-left: 10px;
+                         padding: -5px;
+                         width: 45px;
+                         height: 51px;
+                        transition: all 2s;}
 
-    li:hover {
-        height: 100px; width: 100px;
-        padding: 10px;
-        background-color: rgb(220, 231, 231);}
+                         li:hover {
+                         height: 100px; width: 100px;
+                         padding: 10px;
+                         background-color: rgb(220, 231, 231);}
+                 }    
+            }
+        }
 
-    .menu{
-        font-size: 8px;
-        color: black;
-        margin-left: 10px;}
     
 
     .lista{

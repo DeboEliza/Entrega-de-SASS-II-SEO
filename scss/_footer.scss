@@ -4,15 +4,16 @@ footer{
 
         H3{padding-left: 100px;
         }
-        div{
-           display: flex;
-           flex-direction: row-reverse;
-           justify-content:space-between;
-           padding: 7px;
-           padding-left: 100px;
+        .redes-display{ 
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content:space-between;
+            padding: 7px;
+            padding-left: 100px;
+        
 
            a{ 
-              img{
+              .redes{
                  width: 60px;
                  padding-left: 20px; 
                  width: 50px;

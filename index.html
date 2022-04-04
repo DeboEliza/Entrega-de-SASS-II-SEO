@@ -10,29 +10,30 @@
     <link rel="stylesheet" href="css/estilouno.css">
 </head>
 <body>
-    <header> 
-        <div>
+    <header class="header"> 
+        <div class="div_logo">
             <a href="index.html"><img src="assets/img/images-logo-redondo.png" alt="logo" class="logotipo"> </a> 
         </div>
           <nav>
-             <ul class="ul-flex">
-              <li class="li-flex-movil"><a href="#">HOME</a></li>
-              <li class="li-flex-movil"><a href="views/nosotros.html">NOSOTROS</a></li>
-              <li class="li-flex-movil"><a href="views/productos.html">PRODUCTOS</a></li>
-              <li class="li-flex-movil"><a href="views/contacto.html">CONTACTO</a></li>
-              <li class="li-flex-movil"><a href="views/nuestrosClientes.html">NUESTROS CLIENTES</a></li>
+             <ul>
+              <li><a href="#" class=”menu”>HOME</a></li>
+              <li><a href="views/nosotros.html" class=”menu”>NOSOTROS</a></li>
+              <li><a href="views/productos.html" class=”menu”>PRODUCTOS</a></li>
+              <li><a href="views/contacto.html" class=”menu”>CONTACTO</a></li>
+              <li><a href="views/nuestrosClientes.html" class=”menu”>NUESTROS CLIENTES</a></li>
              </ul>
           </nav>
     </header> 
+
     <main>
         <div>
             <article>
-                <H1>GreenSolar</H1>
+                <H1 class="titulo-principal">GreenSolar</H1>
                 <div>
-                    <img src="assets/img/images-logo.jpg" alt= "paisaje" class="logo-grande">
+                    <img src="assets/img/images-logo.jpg" alt= "logoGrande" class="logo-grande">
                 </div>
                     <div>
-                        <p>
+                        <p class="texto-principal">
                             Ahorrar y cuidar al medio ambiente es ser inteligente. Un sistema de paneles solares para
                             casa aporta grandes beneficios, y hacerlo de la mano de profesionales certificados te garantiza
                             los mejores resultados para que tu ahorro energético sea real.  De esta manera,
@@ -42,33 +43,35 @@
                     </div>
             </article>  
         </div> 
-        <div>
-            <a href="views/contacto.html" ><img src="assets/img/panel3.jfif" alt="paneles01"></a>
-            <a href="views/opiniones de nuestros clientes.html"><img src="assets/img/paneles02.jpg" alt="paneles02"></a>
-            <a href="views/productos.html"><img src="assets/img/paneles03.jfif" alt="paneles03"></a>
-
-           <P>El mejor producto, la mejor atención pre y post venta,
-                a un precio competitivo.
-            </P>
-           <p>    Genere su propia energía eléctrica. Proveemos una solución segura y confiable,
-                especialmente diseñada para tu hogar, nuestros clientes lo abalan.
-           </p>
-           <p>  Las celdas solares de estos paneles pueden variar entre silicio policristalino o
-                monocristalino dependiendo del modelo elegido, tal cual se haya especificado
-                en la tabla de especificaciones técnicas.
-            </p>
-        </div>            
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="views/contacto.html" ><img src="assets/img/panel3.jfif" alt="paneles01" class="foto-imagen"></a>
+                   <P class="primerTexto">El mejor producto, la mejor atención pre y post venta,
+                                   a un precio competitivo.
+                  </P>
+            </div>
+             <div class="grid-item">
+              <a href="views/opiniones de nuestros clientes.html"><img src="assets/img/paneles02.jpg" alt="paneles02" class="foto-imagen"></a>
+                   <p class="primerTexto">    Genere su propia energía eléctrica. Proveemos una solución segura y confiable,
+                                           especialmente diseñada para tu hogar, nuestros clientes lo abalan.
+                  </p>
+            </div>
+            <div class="grid-item">
+                     <a href="views/productos.html"><img src="assets/img/paneles03.jfif" alt="paneles03" class="foto-imagen"></a>
+                       <p class="primerTexto">  Las celdas solares de estos paneles pueden variar entre silicio policristalino o
+                                 monocristalino dependiendo del modelo elegido, tal cual se haya especificado
+                            en la tabla de especificaciones técnicas.
+                       </p>
+            </div>
+        </div>                
     </main> 
     <footer>
         <h3>Redes Sociales</h3>
-        <div>
-            <a href="https://www.instagram.com/?hl=es-la"  rel="instagram" target="blank"> <img src="assets/img/insta.jfif" alt="logo intagram" > </a>
-            <a href="https://www.whatsapp.com/"  rel="whatsapp" target="blank"> <img src="assets/img/whatsapp.jfif" alt="logo whatsapp"> </a>
-            <a href="https://www.facebook.com/"  rel="face" target="blank"><img src="assets/img/facebook.png" alt="facebook"> </a>
+        <div class="redes-display">
+            <a href="https://www.instagram.com/?hl=es-la"  rel="instagram" target="blank"> <img src="assets/img/insta.jfif" alt="logo intagram" class="redes"  > </a>
+            <a href="https://www.whatsapp.com/"  rel="whatsapp" target="blank"> <img src="assets/img/whatsapp.jfif"  alt="logo whatsapp" class="redes"> </a>
+            <a href="https://www.facebook.com/"  rel="face" target="blank"><img src="assets/img/facebook.png" alt="facebook" class="redes"> </a>
         </div>
-        <div>
-            <a href="views/contacto.html"></a>
-        </div>
-    </footer> 
+    </footer>
 </body>                   
 </html> 

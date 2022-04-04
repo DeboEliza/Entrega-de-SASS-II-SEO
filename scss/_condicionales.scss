@@ -3,90 +3,45 @@ $vista:mobile;
 header{
 @if $vista == desktop {
 	@media only screen and (min-width:1024px){
-		h1{font-size:$h1Desktop;}
-		h3{font-size:35px;}
-		p{font-size:$parrafoDesktop;}
+        width: 100px; height: 100px;
 		}
 	} @else if $vista == mobile {
-		@media only screen and (max-width:767px){
-			ul {display: flex;
-        flex-direction: row;
-        height: 30px;
-        bottom: 143px;
-        left: -184px;
-        padding-left: 5px;
-        margin: 10%;}
+        @media only screen and (max-width:420px){
 
-     div{
-         a{
-            .logotipo {
+            .logotipo{ 
                 margin-bottom: 13cm;
                 width: 50px;
                 height: 50px;
             }
-         }
-     } a  .logotipo {
-            margin-bottom: 13cm;
-            width: 50px;
-            height: 50px;
-        }
         
-        
-    
-    .container-fluid{
-        nav{
-            ul{
-                .menu{
-                         list-style-type:none;
-                         color: black; 
-                         font-size: 10px;
-                         margin-left: 10px;
-                         padding: -5px;
-                         width: 45px;
-                         height: 51px;
-                        transition: all 2s;}
-
-                         li:hover {
-                         height: 100px; width: 100px;
-                         padding: 10px;
-                         background-color: rgb(220, 231, 231);}
-                 }    
-            }
         }
-
-    
-
-    .lista{
-        text-align: left;
-        font-size: 30px;
-        padding: 10px;
-        background-color: rgb(205, 255, 220);
-        margin-top: 50px;}
-		}
 	} @else {
-		h1{font-size:34px;}
-		h3{font-size:25px;}
-		p{font-size:20px;}
+		.logotipo{ 
+            margin-bottom: 13cm;
+            width: 60px;
+            height: 60px;
+        }
+    
 	}
 
 }
 
 
-main{
+main{ 
     @if $vista == desktop {
         @media only screen and (min-width:1024px){
-            h1{font-size:$h1Desktop;}
-            h3{font-size:35px;}
-            p{font-size:$parrafoDesktop;}
+                              
+            
             }
         } @else if $vista == mobile {
-            @media only screen and (max-width:767px){
-                  .logo-grande{
-                       display: block;
-                       margin:auto;
-                       width: 121px;
-                       border: 5px solid black;
-                      }        
-              } 
-          }
-  }
+            @media only screen and (max-width:420px){
+                
+            }
+    } @else {
+		   
+        }
+    
+}   
+                 
+               
+          

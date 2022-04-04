@@ -1,16 +1,17 @@
-header{
+.header{
     position:fixed;
-     z-index: 5;
-      left:0%;
-     top: 0%;
-     right: 0%;
-     height: 100px;
-     margin: 100px;
-     margin-top: 0%;
-     display: grid;
-     grid-template-rows: 50px;
-     grid-column: 100px 10px 10px 10px 10px;
-     background:$backgroundprimario;
+    z-index: 4;
+    left:0%;
+    top: 0%;
+    right: 0%;
+    height: 100px;
+    margin: 10px;
+    margin-top: 0%;
+    background-image: linear-gradient(to left, rgb(102, 219, 102),yellow,blue);
+    display: grid;
+    grid-template-rows: 50px;
+    grid-column: 100px 10px 10px 10px 10px;
+
     
     
     
@@ -45,47 +46,49 @@ header{
         
 }
 
-header{
-    .container-fluid{
-        .div-row{
-            display: flex;
-            flex-wrap: wrap;
-            margin-right: -8px;
-            margin-left: -575px;
-        }
+.header{
+     nav{
+        ul{display: flex;
+            flex-direction: row;
+            position: relative;
+            bottom: 235px;
+            left: 279px;
+            padding-left: 100px;
+            margin: 10%;
+            li{  
+                list-style-type:none;
+                color: black;
+                padding: 10px;
+                font-size: 17px;
+                width: 119px; height: 109px;
+                transition: all 2s;
+            }       
+            
+            li:hover {
+                height: 200px; width: 200px;
+                padding: 10px;
+                background-color: rgb(220, 231, 231);
+                .menu{
+                    font-size: 17px;
+                    color: black;
+                    margin-left: 10px;
+                }
+                
+            }
+            
+        }          
     }
 }
-
-
-@media screen and (max-width: 320){
-    nav {
-        display: flex;
-        flex-direction: row;
-        height: 30px;
-        bottom: 82px;
-        left: 10px;
-        padding-left: 5px;
-        margin: 10%;
-    }
     
-}
 
 
 
 
-.menu{
-    font-size: 17px;
-    color: black;
-    margin-left: 10px;
-}
-@media screen and (max-width: 320){
-                        .header {
-                            margin: 15px;
-                            margin-top: 0%;
-                            height: 50px;
-                          }  
-                                                 
- }
+
+
+
+
+
 
 
  

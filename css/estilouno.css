@@ -1,7 +1,7 @@
 main {
   padding-top: 10rem;
   background-color: #09ff00; }
-  main div article H1 {
+  main div article .titulo-principal {
     font-size: 50px;
     text-align: center;
     margin-bottom: 5%;
@@ -10,11 +10,15 @@ main {
     background-image: url(../assets/img/panel-solar1000.jpg);
     background-repeat: no-repeat;
     border: 8px solid black; }
-  main div article div img {
+  main div article div .logo-grande {
     display: block;
     margin: auto;
-    width: 300px;
-    border: 10px solid black; }
+    width: 290px;
+    border: 10px solid black;
+    animation-name: paisaje-logo;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 5s; }
   main div article div p {
     font-size: 18px;
     text-align: center;
@@ -29,6 +33,39 @@ main {
     transition: all 2s;
     margin-left: 50px; }
 
+.texto-principal {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 30px;
+  padding: 30px; }
+
+.grid-container {
+  width: 90%;
+  margin: 30px;
+  margin-left: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px 200px 200px;
+  grid-column-gap: 10%; }
+
+.foto-imagen {
+  padding: 5px;
+  height: 0.5cm;
+  width: 250px;
+  height: 250px;
+  transition: all 2s;
+  margin-left: 50px;
+  box-shadow: 0 0 20px #333; }
+
+.foto-imagen :hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+  background-color: #caeceb; }
+
+.primerTexto {
+  padding-top: 40%;
+  margin-left: 25%; }
+
 main div div div table thead tr th {
   font-size: 1em;
   color: black; }
@@ -40,49 +77,42 @@ main .carusel-de-fotos .carusel-de-fotos1 {
 main .video .videoPosicion {
   margin-top: 30px; }
 
-@media screen and (max-width: 320) {
-  main div article .logo-grande {
-    display: block;
-    margin: auto;
-    width: 121px;
-    border: 5px solid black; } }
-
 footer {
   background-image: linear-gradient(blue, green);
   margin: 0px; }
   footer H3 {
     padding-left: 100px; }
-  footer div {
+  footer .redes-display {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 7px;
     padding-left: 100px; }
-    footer div a img {
+    footer .redes-display a .redes {
       width: 60px;
       padding-left: 20px;
       width: 50px;
       height: 50px;
       background-color: #e3ee82;
       border: solid 1px; }
-      footer div a img :hover {
+      footer .redes-display a .redes :hover {
         padding: 20px;
         transform: skewY(25deg); }
 
-header {
+.header {
   position: fixed;
-  z-index: 5;
+  z-index: 4;
   left: 0%;
   top: 0%;
   right: 0%;
   height: 100px;
-  margin: 100px;
+  margin: 10px;
   margin-top: 0%;
+  background-image: linear-gradient(to left, #66db66, yellow, blue);
   display: grid;
   grid-template-rows: 50px;
-  grid-column: 100px 10px 10px 10px 10px;
-  background: linear-gradient(to left, #66db66, yellow, blue); }
-  header div a .logotipo {
+  grid-column: 100px 10px 10px 10px 10px; }
+  .header div a .logotipo {
     margin-top: 0%;
     margin-left: 5px;
     width: 100px;
@@ -101,32 +131,31 @@ header {
   100% {
     transform: rotate(360deg); } }
 
-header .container-fluid .div-row {
+.header nav ul {
   display: flex;
-  flex-wrap: wrap;
-  margin-right: -8px;
-  margin-left: -575px; }
-
-@media screen and (max-width: 320) {
-  nav {
-    display: flex;
-    flex-direction: row;
-    height: 30px;
-    bottom: 82px;
-    left: 10px;
-    padding-left: 5px;
-    margin: 10%; } }
-
-.menu {
-  font-size: 17px;
-  color: black;
-  margin-left: 10px; }
-
-@media screen and (max-width: 320) {
-  .header {
-    margin: 15px;
-    margin-top: 0%;
-    height: 50px; } }
+  flex-direction: row;
+  position: relative;
+  bottom: 235px;
+  left: 279px;
+  padding-left: 100px;
+  margin: 10%; }
+  .header nav ul li {
+    list-style-type: none;
+    color: black;
+    padding: 10px;
+    font-size: 17px;
+    width: 119px;
+    height: 109px;
+    transition: all 2s; }
+  .header nav ul li:hover {
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    background-color: #dce7e7; }
+    .header nav ul li:hover .menu {
+      font-size: 17px;
+      color: black;
+      margin-left: 10px; }
 
 nav {
   padding-top: 5rem; }
@@ -245,47 +274,8 @@ a {
   height: 51px;
   transition: all 2s; }
 
-@media only screen and (max-width: 767px) {
-  header ul {
-    display: flex;
-    flex-direction: row;
-    height: 30px;
-    bottom: 143px;
-    left: -184px;
-    padding-left: 5px;
-    margin: 10%; }
-  header div a .logotipo {
+@media only screen and (max-width: 420px) {
+  header .logotipo {
     margin-bottom: 13cm;
     width: 50px;
-    height: 50px; }
-  header a .logotipo {
-    margin-bottom: 13cm;
-    width: 50px;
-    height: 50px; }
-  header .container-fluid nav ul .menu {
-    list-style-type: none;
-    color: black;
-    font-size: 10px;
-    margin-left: 10px;
-    padding: -5px;
-    width: 45px;
-    height: 51px;
-    transition: all 2s; }
-  header .container-fluid nav ul li:hover {
-    height: 100px;
-    width: 100px;
-    padding: 10px;
-    background-color: #dce7e7; }
-  header .lista {
-    text-align: left;
-    font-size: 30px;
-    padding: 10px;
-    background-color: #cdffdc;
-    margin-top: 50px; } }
-
-@media only screen and (max-width: 767px) {
-  main .logo-grande {
-    display: block;
-    margin: auto;
-    width: 121px;
-    border: 5px solid black; } }
+    height: 50px; } }

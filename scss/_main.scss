@@ -2,7 +2,7 @@ main{ padding-top: 10rem;
     background-color:$bgcolorsecundario;
        div{
          article{
-                    H1{
+                    .titulo-principal{
                         font-size: 50px;
                         text-align: center;
                         margin-bottom: 5%;
@@ -12,16 +12,21 @@ main{ padding-top: 10rem;
                         background-repeat: no-repeat;
                         border: 8px solid black;
 
-                     }
-                 div{
-                       img{
-                        display: block;
-                        margin: auto;
-                        width: 300px;
-                        border: 10px solid black;
-
-                        }
                     }
+
+                    div{
+                         .logo-grande{
+                                    display: block;
+                                    margin: auto;
+                                    width: 290px;
+                                    border: 10px solid black;
+                                    animation-name: paisaje-logo;
+                                    animation-iteration-count: 1;
+                                    animation-timing-function: ease-in;
+                                    animation-duration: 5s;
+                                }  
+                    }
+
                    div{
                        p{
                          font-size:  $fuente-chica ;
@@ -46,6 +51,48 @@ main{ padding-top: 10rem;
      
     
 }
+
+.texto-principal{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+    padding: 30px;
+}
+
+
+
+.grid-container{width: 90%;
+    margin: 30px;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    grid-template-rows: 200px 200px 200px;
+    grid-column-gap:10%;
+   
+}
+.foto-imagen{
+    padding: 5px;
+    height: 0.5cm;
+    width: 250px; height: 250px;
+    transition: all 2s;
+    margin-left: 50px;
+    box-shadow: 0 0 20px #333;
+}
+
+
+
+.foto-imagen :hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+    background-color: rgb(202, 236, 235);
+}
+
+.primerTexto{
+    padding-top: 40%;
+    margin-left: 25%;
+    
+}
+
 
 
 main{ 
@@ -119,17 +166,3 @@ main{
     }
 }
 
-@media screen and (max-width: 320){
-  main{
-      div{
-          article{
-                .logo-grande{
-                     display: block;
-                     margin:auto;
-                     width: 121px;
-                     border: 5px solid black;
-                    }        
-            } 
-        }
-    }  
-}

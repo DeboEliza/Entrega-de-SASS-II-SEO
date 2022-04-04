@@ -33,30 +33,7 @@ nav{ padding-top: 5rem;
             
             
             }
-          
-    
- @media (max-width: 780px){
-            .ul-flex {
-                display: flex;
-                flex-direction: row;
-                bottom: 81px;
-                bottom: 75px;
-                left: 9px;
-                padding-left: 5px;
-                margin: 10%;}
-            
-            .li-flex-movil {
-                list-style-type: none;
-                color: black;
-                padding: -5px;
-                font-size: 17px;
-                width: 74px;
-                height: 51px;
-                transition: all 2s;
-            }  
         
-    }
-
 
     @mixin flex-lista-menu{
         list-style-type: none;
@@ -74,3 +51,62 @@ nav{ padding-top: 5rem;
                                  }
 }
 
+@media only screen and (max-width: 420px){
+   
+    .header{
+        .div-logo{
+            a{
+               .logotipo{
+                margin-bottom: 13cm;
+               width: 50px;
+               height: 50px;} 
+            }
+        }
+    }
+           
+    .header{
+        nav{ 
+             ul {display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                height: 24px;
+                bottom: 165px;
+                left: 10px;
+                padding-left: 18px;
+                margin: 10%;
+            
+              li{
+                list-style-type:none;
+                 color: black; 
+                  padding: -5px;
+                width: 52px;
+                height: 1px;
+                transition: all 2s;
+
+                 li:hover {
+               height: 100px; width: 100px;
+              padding: 10px;
+                background-color: rgb(220, 231, 231);   }
+                 }
+            }
+        }
+    }      
+    
+                  
+}
+@media only screen and (max-width: 420px){
+  .header{
+        nav{
+           ul{
+                li{
+                    a{
+                    font-size: 10px;
+                    color: black;
+                    margin-left: 10px; 
+                    
+                     }
+                }
+            }
+        }
+    }
+}

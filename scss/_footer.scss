@@ -13,18 +13,28 @@ footer{
         
 
            a{ 
-              .redes{
-                 width: 60px;
-                 padding-left: 20px; 
-                 width: 50px;
-                 height: 50px;
-                 background-color:$colorsecundario;
-                  border: solid 1px;
-                  & :hover {
-                  padding: 20px;
-                   transform: skewY(25deg)
-                    }
-                }  
+            .redes{
+                width: 60px;
+                padding-left: 20px; 
+                    width: 50px;
+                    height: 50px;
+                    background-color: rgba(238, 223, 16, 0.9);
+                    border: solid 1px;
+            } 
+            .redes:hover {
+                    padding: 20px;
+                    transform: skewY(25deg)
+            }
+            
+            .redes-display{ 
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content:space-between;
+                padding: 7px;
+                padding-left: 100px;
+            
+            }
+            
               
             }
 

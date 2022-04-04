@@ -166,3 +166,8 @@ main{
     }
 }
 
+@media (max-width: 420px){
+    main{ padding-top: 3rem;
+        background-color:$bgcolorsecundario;}
+}
+ 

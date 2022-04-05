@@ -166,8 +166,92 @@ main{
     }
 }
 
-@media (max-width: 420px){
+@media only screen and (max-width: 420px){
     main{ padding-top: 3rem;
-        background-color:$bgcolorsecundario;}
+        background-color:$bgcolorsecundario;
+             div{
+                     article{
+                              .titulo-principal{ 
+                                    font-size: 25px;
+                                    text-align: center;
+                                    padding: 6px;
+                                    padding-top: 22px;
+                                    background-color: beige;
+                                    border: 5px solid black;
+                                }                            
+                         }
+                 }
+    }
 }
- 
+@media only screen and (max-width: 420px){
+    main{
+        div{
+            article{
+                    div{
+                        .logo-grande{
+                              display: block;
+                              margin:auto;
+                              width: 121px;
+                              border: 5px solid black;
+
+                        }
+                    }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 420px){
+    main{
+        div{
+            article{
+                div{
+                    .texto-principal{
+                        text-align: center;
+                        margin-top: -3px;
+                        font-size: 15px;
+                        padding: 11px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 420px){
+    main{
+        .grid-container{
+            width: 90%;
+            margin: 18px;
+            margin-left: 86px;
+            display: grid;
+            grid-template-columns: 212px;
+            grid-template-rows: 230px 240px 470px;
+            grid-column-gap: 10%;
+    
+                .grid-item{
+
+                    .foto-imagen{
+                        padding: 5px;
+                        height: 0.5cm;
+                        width: 100px; height: 100px;
+                        transition: all 2s;
+                        margin-left: 50px;
+                        box-shadow: 0 0 20px #333;
+                
+
+                    }
+
+                    .primerTexto{
+                        text-align: center;
+                        margin-top: -5px;
+                       font-size: 15px;
+                       padding: 11px;
+                       margin-left: -3px;    
+                
+
+                    }
+                }
+        }
+    }
+}

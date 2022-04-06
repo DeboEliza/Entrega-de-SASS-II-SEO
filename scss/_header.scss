@@ -19,15 +19,13 @@
         a{ 
             .logotipo{
                 margin-top: 0%;
-                margin-left: 5px;
+                margin-left: -931px;
                 width: 100px; height: 100px;
-                transition: all 2s;
                 animation-name: paisaje-logo;
                 animation-iteration-count: 5;
                 animation-timing-function: ease-in;
                 animation-duration: 5s;
-               }  
-
+                 
                 @keyframes paisaje-logo {
                     0% {
                         transform: translateX(-50);
@@ -38,12 +36,10 @@
                    100%{ 
                        transform:rotate(360deg);
                    }
+                }
             }
         }
-    } 
-
-    
-        
+    }        
 }
 
 .header{
@@ -72,10 +68,8 @@
                     font-size: 17px;
                     color: black;
                     margin-left: 10px;
-                }
-                
-            }
-            
+                } 
+            }  
         }          
     }
 }
@@ -92,51 +86,51 @@
 }
 .header-de-contacto{
                  nav{
-                             div{
-                                    ul{
-                                        display: flex;
-                                        flex-direction: row;
-                                       position: relative;
-                                            bottom: 156px;
-                                              left: 433px;
-                                             padding-left: 100px;
-                                               margin: 5%;
-                                    }
+                       div{
+                             ul{
+                                   display: flex;
+                                   flex-direction: row;
+                                    position: relative;
+                                    bottom: 156px;
+                                    left: 433px;
+                                    padding-left: 100px;
+                                    margin: 5%;
                                 }
-                            }
-                        
+                        }
+                    }                       
 }
 
 .header-de-contacto{
     .navbar {
-         position: relative;
+           position: relative;
            display: -ms-flexbox;
            display: flex;
-          -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-         -ms-flex-align: center;
-          align-items: center;
-         -ms-flex-pack: justify;
-          justify-content: space-between;
-          padding: 7.5rem 1rem;
+           -ms-flex-wrap: wrap;
+           flex-wrap: wrap;
+           -ms-flex-align: center;
+           align-items: center;
+           -ms-flex-pack: justify;
+           justify-content: space-between;
+           padding: 7.5rem 1rem;
                               div{
-                                 .a-de-imagen{
+                                   .a-de-imagen{
                                       position:absolute;
                                        margin-top: -233px;
                                        margin-left: 5px;
                                                         .logotipo{
                                                          width: 90px; height: 90px;
-                                                         padding-top: 0px;  
-                                                               }
-                                           }
+                                                         padding-top: 0px;
+                                                         padding: 0;  
+                                                         }
+                                    }
                                  }      
        }
 }
 
-@media (max-width: 420px){
+@media only screen and (max-width: 420px){
    
     .header{
-        margin: 15px;
+        margin: 2px;
         margin-top: 0%;
         background-color:rgb(78, 197, 226);
         height: 58px;
@@ -144,7 +138,8 @@
         div{ 
             a{ 
                 .logotipo{
-                    margin-bottom: 13cm;
+                    margin-left: -207px;
+                    margin-bottom: 24cm;
                     width: 50px;
                     height: 50px;
             
@@ -156,7 +151,7 @@
 }
 
 
-@media (max-width: 450px){
+@media only screen and (max-width: 420px){
    .header-de-contacto{
        .nav-de-contacto{
            a{
@@ -173,36 +168,34 @@
    }
 }
 @media (max-width: 450px){
-.header-de-contacto{
-    .navbar {
-        position: relative;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -ms-flex-align: center;
-        align-items: self-start;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        padding: 0.5rem 1rem;
-               div{
-                   .a-de-imagen{
-                    position:absolute;
-                    margin-top: -7px;
-                     margin-left: 5px;
-                     width: 50px;
-                     height: 50px;
-                     .logotipo{
-                        margin-bottom: 13cm;
-                        width: 70px;
-                        height: 70px;
-                
-                       }
-
-                   }
-               }
-    }
-}
+      .header-de-contacto{
+           .navbar {
+              position: relative;
+              display: -ms-flexbox;
+              display: flex;
+             -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+             -ms-flex-align: center;
+             align-items: self-start;
+             -ms-flex-pack: justify;
+             justify-content: space-between;
+             padding: 0.5rem 1rem;
+                                div{
+                                    .a-de-imagen{
+                                             position:absolute;
+                                             margin-top: -7px;
+                                             margin-left: 5px;
+                                             width: 50px;
+                                             height: 50px;
+                                                          .logotipo{
+                                                               margin-bottom: 13cm;
+                                                               width: 70px;
+                                                               height: 70px;
+                                                            }
+                                     }
+                                 }
+             }
+        }
 }
 
                

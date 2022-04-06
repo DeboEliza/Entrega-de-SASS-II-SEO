@@ -2,15 +2,13 @@ nav{ padding-top: 5rem;
 
     ul {display: flex;
         flex-direction: row;
-        position: relative;
+        position:wrap ;
         bottom: 156px;
         left: 200px;
         padding-left: 100px;
-        margin: 5%;
+        margin: 5%;  
+    
 
-       
-    }
-}
         li{  
             list-style-type:none;
             padding: 10px;
@@ -21,21 +19,18 @@ nav{ padding-top: 5rem;
                 height: 200px; width: 200px;
                 padding: 10px;
                background-color: rgb(227, 238, 130)
-                 } 
-                
-}   
-           
-          a{
+                 }                     
+           a{
               font-size: 17px;
               $tipografia-alternativa: 'Times New Roman', Times, serif;
               color: black;
               margin-left: 10px;
-            
-            
             }
-        
-
-    @mixin flex-lista-menu{
+        }
+    }   
+}
+  
+@mixin flex-lista-menu{
         list-style-type: none;
         color: black;
         padding: -5px;
@@ -69,9 +64,9 @@ nav{ padding-top: 5rem;
              ul {display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                height: 24px;
-                bottom: 165px;
-                left: 10px;
+                height: 35px;
+                bottom: 170px;
+                left: 39px;
                 padding-left: 18px;
                 margin: 10%;
             
@@ -90,10 +85,9 @@ nav{ padding-top: 5rem;
                  }
             }
         }
-    }      
-    
-                  
+    }                           
 }
+
 @media only screen and (max-width: 420px){
   .header{
         nav{

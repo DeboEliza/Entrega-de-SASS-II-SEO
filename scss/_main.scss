@@ -1,3 +1,11 @@
+body,html {
+    margin: 0;
+    text-align: center;
+    background-color: blue;
+} 
+
+
+
 main{ padding-top: 10rem;
     background-color:$bgcolorsecundario;
        div{
@@ -30,10 +38,10 @@ main{ padding-top: 10rem;
                    div{
                        p{
                          font-size:  $fuente-chica ;
-                        text-align: center;
-                        margin-top: 50px;
-                        padding: 30px;
-                        
+                         text-align: center;
+                         margin-top: 50px;
+                         padding: 30px;
+   
                       }
                     }
                 }
@@ -112,8 +120,6 @@ main{
             }
 
         }
-
-
         
     }
 }
@@ -124,10 +130,8 @@ main{
     .imagenCasaGift{
                     img{ 
                         @extend .position-relative;
-                    
 
                     }
-       
     }
 }
 
@@ -138,10 +142,8 @@ main{
                 .primer-pregunta{ 
                     @extend .position-relativeR;
                               
-                }
-                
-            }
-            
+                } 
+            } 
         }
     }
 }
@@ -183,43 +185,32 @@ main{
                  }
     }
 }
+
+
 @media only screen and (max-width: 420px){
-    main{
+    main{  padding-top: 7rem;
         div{
             article{
                     div{
-                        .logo-grande{
-                              display: block;
-                              margin:auto;
-                              width: 121px;
-                              border: 5px solid black;
-
+                        .texto-principal{
+                            text-align: center;
+                            margin-top: -3px;
+                            font-size: 15px;
+                            padding: 11px;
                         }
+                        .logo-grande{
+                            display: block;
+                            margin:auto;
+                            width: 121px;
+                            border: 5px solid black;
+                        }  
                     }
             }
         }
     }
 }
-
 @media only screen and (max-width: 420px){
-    main{
-        div{
-            article{
-                div{
-                    .texto-principal{
-                        text-align: center;
-                        margin-top: -3px;
-                        font-size: 15px;
-                        padding: 11px;
-
-                    }
-                }
-            }
-        }
-    }
-}
-@media only screen and (max-width: 420px){
-    main{
+    main{  padding-top: 7rem;
         .grid-container{
             width: 90%;
             margin: 18px;
@@ -236,20 +227,18 @@ main{
                         height: 0.5cm;
                         width: 100px; height: 100px;
                         transition: all 2s;
-                        margin-left: 50px;
+                        margin-left: -119px;
                         box-shadow: 0 0 20px #333;
-                
 
                     }
 
                     .primerTexto{
                         text-align: center;
-                        margin-top: -5px;
+                        margin-top: -33px;
                        font-size: 15px;
-                       padding: 11px;
-                       margin-left: -3px;    
+                       padding: 42px;
+                       margin-left: -109px;    
                 
-
                     }
                 }
         }

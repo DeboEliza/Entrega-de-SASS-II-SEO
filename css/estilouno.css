@@ -1,3 +1,8 @@
+body, html {
+  margin: 0;
+  text-align: center;
+  background-color: blue; }
+
 main {
   padding-top: 10rem;
   background-color: #09ff00; }
@@ -90,47 +95,49 @@ main .video .videoPosicion {
       border: 5px solid black; } }
 
 @media only screen and (max-width: 420px) {
-  main div article div .logo-grande {
-    display: block;
-    margin: auto;
-    width: 121px;
-    border: 5px solid black; } }
-
-@media only screen and (max-width: 420px) {
-  main div article div .texto-principal {
-    text-align: center;
-    margin-top: -3px;
-    font-size: 15px;
-    padding: 11px; } }
-
-@media only screen and (max-width: 420px) {
-  main .grid-container {
-    width: 90%;
-    margin: 18px;
-    margin-left: 86px;
-    display: grid;
-    grid-template-columns: 212px;
-    grid-template-rows: 230px 240px 470px;
-    grid-column-gap: 10%; }
-    main .grid-container .grid-item .foto-imagen {
-      padding: 5px;
-      height: 0.5cm;
-      width: 100px;
-      height: 100px;
-      transition: all 2s;
-      margin-left: 50px;
-      box-shadow: 0 0 20px #333; }
-    main .grid-container .grid-item .primerTexto {
+  main {
+    padding-top: 7rem; }
+    main div article div .texto-principal {
       text-align: center;
-      margin-top: -5px;
+      margin-top: -3px;
       font-size: 15px;
-      padding: 11px;
-      margin-left: -3px; } }
+      padding: 11px; }
+    main div article div .logo-grande {
+      display: block;
+      margin: auto;
+      width: 121px;
+      border: 5px solid black; } }
+
+@media only screen and (max-width: 420px) {
+  main {
+    padding-top: 7rem; }
+    main .grid-container {
+      width: 90%;
+      margin: 18px;
+      margin-left: 86px;
+      display: grid;
+      grid-template-columns: 212px;
+      grid-template-rows: 230px 240px 470px;
+      grid-column-gap: 10%; }
+      main .grid-container .grid-item .foto-imagen {
+        padding: 5px;
+        height: 0.5cm;
+        width: 100px;
+        height: 100px;
+        transition: all 2s;
+        margin-left: -119px;
+        box-shadow: 0 0 20px #333; }
+      main .grid-container .grid-item .primerTexto {
+        text-align: center;
+        margin-top: -33px;
+        font-size: 15px;
+        padding: 42px;
+        margin-left: -109px; } }
 
 footer {
   background-image: linear-gradient(blue, green);
   margin: 0px; }
-  footer H3 {
+  footer h3 {
     padding-left: 100px; }
   footer .redes-display {
     display: flex;
@@ -183,10 +190,9 @@ footer {
   grid-column: 100px 10px 10px 10px 10px; }
   .header div a .logotipo {
     margin-top: 0%;
-    margin-left: 5px;
+    margin-left: -931px;
     width: 100px;
     height: 100px;
-    transition: all 2s;
     animation-name: paisaje-logo;
     animation-iteration-count: 5;
     animation-timing-function: ease-in;
@@ -263,20 +269,22 @@ footer {
     .header-de-contacto .navbar div .a-de-imagen .logotipo {
       width: 90px;
       height: 90px;
-      padding-top: 0px; }
+      padding-top: 0px;
+      padding: 0; }
 
-@media (max-width: 420px) {
+@media only screen and (max-width: 420px) {
   .header {
-    margin: 15px;
+    margin: 2px;
     margin-top: 0%;
     background-color: #4ec5e2;
     height: 58px; }
     .header div a .logotipo {
-      margin-bottom: 13cm;
+      margin-left: -207px;
+      margin-bottom: 24cm;
       width: 50px;
       height: 50px; } }
 
-@media (max-width: 450px) {
+@media only screen and (max-width: 420px) {
   .header-de-contacto .nav-de-contacto a img .logotipo {
     margin-bottom: 13cm;
     width: 50px;
@@ -341,29 +349,27 @@ nav {
   nav ul {
     display: flex;
     flex-direction: row;
-    position: relative;
+    position: wrap;
     bottom: 156px;
     left: 200px;
     padding-left: 100px;
     margin: 5%; }
-
-li {
-  list-style-type: none;
-  padding: 10px;
-  font-size: 17px;
-  width: 100px;
-  height: 100px;
-  transition: all 2s; }
-  li:hover {
-    height: 200px;
-    width: 200px;
-    padding: 10px;
-    background-color: #e3ee82; }
-
-a {
-  font-size: 17px;
-  color: black;
-  margin-left: 10px; }
+    nav ul li {
+      list-style-type: none;
+      padding: 10px;
+      font-size: 17px;
+      width: 100px;
+      height: 100px;
+      transition: all 2s; }
+      nav ul li:hover {
+        height: 200px;
+        width: 200px;
+        padding: 10px;
+        background-color: #e3ee82; }
+      nav ul li a {
+        font-size: 17px;
+        color: black;
+        margin-left: 10px; }
 
 @media only screen and (max-width: 768px) {
   .li-flex-movil {
@@ -384,9 +390,9 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 24px;
-    bottom: 165px;
-    left: 10px;
+    height: 35px;
+    bottom: 170px;
+    left: 39px;
     padding-left: 18px;
     margin: 10%; }
     .header nav ul li {

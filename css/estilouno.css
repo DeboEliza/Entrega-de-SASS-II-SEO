@@ -1,7 +1,6 @@
 body, html {
   margin: 0;
-  text-align: center;
-  background-color: blue; }
+  text-align: center; }
 
 main {
   padding-top: 10rem;
@@ -75,12 +74,50 @@ main div div div table thead tr th {
   font-size: 1em;
   color: black; }
 
+main div .preguntas .otrasPreguntas .primer-pregunta {
+  margin-right: auto;
+  padding-left: 10%; }
+
 main .carusel-de-fotos .carusel-de-fotos1 {
   margin-right: auto;
   padding-left: 10%; }
 
 main .video .videoPosicion {
   margin-top: 30px; }
+
+main div div form {
+  margin-left: 0px; }
+
+main div .row div .card {
+  border: 15px solid #6eff0059;
+  border-radius: 2.25rem; }
+
+main div spam .tabla {
+  margin-left: 500px;
+  width: 0px; }
+
+@media only screen and (max-width: 420px) {
+  main div spam .tabla {
+    margin-left: -10px;
+    width: 0px; }
+  main div .row div .card {
+    border: 15px solid #6eff0059;
+    border-radius: 2.25rem; } }
+
+main .row {
+  margin-left: 97px;
+  padding-right: 18px; }
+  main .row .card {
+    border: 15px solid #6eff0059;
+    border-radius: 2.25rem; }
+
+@media only screen and (max-width: 420px) {
+  main .row {
+    margin-left: 2px;
+    padding-right: 18px; }
+    main .row .card {
+      border: 15px solid #6eff0059;
+      border-radius: 2.25rem; } }
 
 @media only screen and (max-width: 420px) {
   main {
@@ -133,6 +170,19 @@ main .video .videoPosicion {
         font-size: 15px;
         padding: 42px;
         margin-left: -109px; } }
+
+@media only screen and (max-width: 420px) {
+  main .imagenCasaGift {
+    margin-left: -407px; }
+    main .imagenCasaGift img {
+      width: 300px;
+      height: 200px; } }
+
+@media only screen and (max-width: 420px) {
+  main div .video {
+    margin-left: -412px;
+    width: 224px;
+    height: 372px; } }
 
 footer {
   background-image: linear-gradient(blue, green);

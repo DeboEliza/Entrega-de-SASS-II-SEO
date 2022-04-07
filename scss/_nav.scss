@@ -30,15 +30,7 @@ nav{ padding-top: 5rem;
     }   
 }
   
-@mixin flex-lista-menu{
-        list-style-type: none;
-        color: black;
-        padding: -5px;
-        font-size: 17px;
-        width: 74px;
-        height: 51px;
-        transition: all 2s;
-}
+
 
 @media only screen and (max-width: 768px){
                       .li-flex-movil{

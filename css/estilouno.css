@@ -1,10 +1,13 @@
 body, html {
   margin: 0;
-  text-align: center; }
+  text-align: center;
+  overflow-x: hidden; }
 
 main {
   padding-top: 10rem;
-  background-color: #09ff00; }
+  background-color: #09ff00;
+  margin-bottom: 0px;
+  padding-bottom: 212px; }
   main div article .titulo-principal {
     font-size: 50px;
     text-align: center;
@@ -14,15 +17,6 @@ main {
     background-image: url(../assets/img/panel-solar1000.jpg);
     background-repeat: no-repeat;
     border: 8px solid black; }
-  main div article div .logo-grande {
-    display: block;
-    margin: auto;
-    width: 290px;
-    border: 10px solid black;
-    animation-name: paisaje-logo;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 5s; }
   main div article div p {
     font-size: 18px;
     text-align: center;
@@ -37,15 +31,9 @@ main {
     transition: all 2s;
     margin-left: 50px; }
 
-.texto-principal {
-  text-align: center;
-  margin-top: 50px;
-  font-size: 30px;
-  padding: 30px; }
-
 .grid-container {
   width: 90%;
-  margin: 30px;
+  margin: -21px;
   margin-left: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -67,8 +55,8 @@ main {
   background-color: #caeceb; }
 
 .primerTexto {
-  padding-top: 40%;
-  margin-left: 25%; }
+  padding-top: 0%;
+  margin-left: 15%; }
 
 main div div div table thead tr th {
   font-size: 1em;
@@ -95,6 +83,12 @@ main div .row div .card {
 main div spam .tabla {
   margin-left: 500px;
   width: 0px; }
+
+main .row-de-nosotros {
+  margin-left: 0px;
+  padding-right: 20px; }
+  main .row-de-nosotros div .parrafo {
+    font-size: 25px; }
 
 @media only screen and (max-width: 420px) {
   main div spam .tabla {
@@ -150,7 +144,7 @@ main .row {
     padding-top: 7rem; }
     main .grid-container {
       width: 90%;
-      margin: 18px;
+      margin: -20px;
       margin-left: 86px;
       display: grid;
       grid-template-columns: 212px;
@@ -183,6 +177,17 @@ main .row {
     margin-left: -412px;
     width: 224px;
     height: 372px; } }
+
+@media only screen and (max-width: 420px) {
+  main div .texto-principal {
+    margin-top: -38px;
+    font-size: 15px;
+    padding: 34px; } }
+
+@media only screen and (max-width: 420px) {
+  main .row-de-nosotros div .parrafo {
+    font-size: 15px;
+    margin-left: 31px; } }
 
 footer {
   background-image: linear-gradient(blue, green);
@@ -494,6 +499,12 @@ nav {
   height: 51px;
   transition: all 2s; }
 
+.del-texto-principal {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 27px;
+  padding: 30px; }
+
 .position-relative, main .imagenCasaGift img {
   position: relative;
   padding-bottom: 10px;
@@ -523,6 +534,22 @@ nav {
   width: 74px;
   height: 51px;
   transition: all 2s; }
+
+.mix-del-texto-principal, .texto-principal {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 27px;
+  padding: 30px; }
+
+.mezcla-del-logo-grande, main div article div .logo-grande {
+  display: block;
+  margin: auto;
+  width: 290px;
+  border: 10px solid black;
+  animation-name: paisaje-logo;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 5s; }
 
 @media only screen and (max-width: 420px) {
   header .logotipo {

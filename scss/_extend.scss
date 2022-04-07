@@ -33,3 +33,21 @@ width: 74px;
 height: 51px;
 transition: all 2s;
 }
+
+.mix-del-texto-principal{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 27px;
+    padding: 30px;
+}
+
+.mezcla-del-logo-grande{
+    display: block;
+    margin: auto;
+    width: 290px;
+    border: 10px solid black;
+    animation-name: paisaje-logo;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+}

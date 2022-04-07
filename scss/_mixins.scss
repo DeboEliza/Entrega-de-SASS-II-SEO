@@ -34,3 +34,27 @@
             height: 51px;
             transition: all 2s;
 }
+
+@mixin targetas-movil {
+    border: 15px solid #6eff0059;
+    border-radius: 2.25rem; 
+}
+
+@mixin mix-movil-titulo-principal {
+                                   font-size: $fuente-mediana;
+                                    text-align: center;
+                                    padding: 6px;
+                                    padding-top: 22px;
+                                    background-color: beige;
+                                    border: 5px solid black;
+}
+
+@mixin grid-movil{
+            width: 90%;
+            margin: -20px;
+            margin-left: 86px;
+            display: grid;
+            grid-template-columns: 212px;
+            grid-template-rows: 230px 240px 470px;
+            grid-column-gap: 10%;
+}

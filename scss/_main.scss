@@ -1,13 +1,15 @@
 body,html {
     margin: 0;
     text-align: center; 
-      
+    overflow-x: hidden;
 } 
 
 
 
 main{ padding-top: 10rem;
     background-color:$bgcolorsecundario;
+       margin-bottom: 0px;
+       padding-bottom: 212px;
        div{
          article{
                     .titulo-principal{
@@ -24,14 +26,7 @@ main{ padding-top: 10rem;
 
                     div{
                          .logo-grande{
-                                    display: block;
-                                    margin: auto;
-                                    width: 290px;
-                                    border: 10px solid black;
-                                    animation-name: paisaje-logo;
-                                    animation-iteration-count: 1;
-                                    animation-timing-function: ease-in;
-                                    animation-duration: 5s;
+                                   @extend .mezcla-del-logo-grande;
                                 }  
                     }
 
@@ -61,16 +56,14 @@ main{ padding-top: 10rem;
 }
 
 .texto-principal{
-    text-align: center;
-    margin-top: 50px;
-    font-size: 30px;
-    padding: 30px;
+            @extend .mix-del-texto-principal;
+                           
 }
 
 
 
 .grid-container{width: 90%;
-    margin: 30px;
+    margin: -21px;
     margin-left: 10px;
     display: grid;
     grid-template-columns: repeat(3,1fr); 
@@ -96,8 +89,8 @@ main{ padding-top: 10rem;
 }
 
 .primerTexto{
-    padding-top: 40%;
-    margin-left: 25%;
+    padding-top: 0%;
+    margin-left: 15%;
     
 }
 
@@ -203,6 +196,19 @@ main{
     }
 }
 
+main{
+    .row-de-nosotros{
+        margin-left: 0px;
+       padding-right: 20px;
+                  div{
+                      .parrafo{
+                        font-size:$fuente-mediana;
+                      }
+                  }
+                      
+    }
+}
+
 @media only screen and (max-width: 420px){
 
     main{
@@ -220,8 +226,7 @@ main{
             .row{
                 div{
                     .card{
-                        border: 15px solid #6eff0059;
-                        border-radius: 2.25rem;
+                        @include targetas-movil;
                                                
                     }
                 }
@@ -234,8 +239,7 @@ main{
 main{
     .row{ margin-left: 97px;
         padding-right: 18px;
-        .card{  border: 15px solid #6eff0059;
-            border-radius: 2.25rem;
+        .card{  @include targetas-movil;
                     
         }
     }
@@ -245,8 +249,7 @@ main{
    main{
         .row{ margin-left: 2px;
                padding-right: 18px;
-                .card{  border: 15px solid #6eff0059;
-                    border-radius: 2.25rem;            
+                .card{  @include targetas-movil;           
                  }
          }
     }
@@ -257,12 +260,7 @@ main{
              div{
                      article{
                               .titulo-principal{ 
-                                    font-size: 25px;
-                                    text-align: center;
-                                    padding: 6px;
-                                    padding-top: 22px;
-                                    background-color: beige;
-                                    border: 5px solid black;
+                                    @include mix-movil-titulo-principal;
                                 }                            
                          }
                  }
@@ -278,7 +276,7 @@ main{
                         .texto-principal{
                             text-align: center;
                             margin-top: -3px;
-                            font-size: 15px;
+                            font-size: $fuente-de15;
                             padding: 11px;
                         }
                         .logo-grande{
@@ -295,13 +293,7 @@ main{
 @media only screen and (max-width: 420px){
     main{  padding-top: 7rem;
         .grid-container{
-            width: 90%;
-            margin: 18px;
-            margin-left: 86px;
-            display: grid;
-            grid-template-columns: 212px;
-            grid-template-rows: 230px 240px 470px;
-            grid-column-gap: 10%;
+             @include grid-movil;
     
                 .grid-item{
 
@@ -318,7 +310,7 @@ main{
                     .primerTexto{
                         text-align: center;
                         margin-top: -33px;
-                       font-size: 15px;
+                       font-size: $fuente-de15;
                        padding: 42px;
                        margin-left: -109px;    
                 
@@ -350,5 +342,32 @@ main{
                 height: 372px;
             }
         }                                     
+    }
+}
+
+@media only screen and (max-width: 420px){
+    main{
+        div{
+            .texto-principal{
+                  margin-top: -38px;
+                  font-size: $fuente-de15;
+                  padding: 34px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 420px){
+
+    main{
+        .row-de-nosotros{
+                      div{
+                          .parrafo{
+                            font-size:$fuente-de15;
+                            margin-left: 31px;
+                          }
+                      }
+                          
+        }
     }
 }
